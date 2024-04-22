@@ -1,4 +1,4 @@
-package com.example.hw5;
+package com.example.lab3;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
