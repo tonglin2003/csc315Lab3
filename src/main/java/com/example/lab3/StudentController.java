@@ -22,6 +22,7 @@ public class StudentController {
     // Get all students in the database, example link: http://localhost:8080/addStudent
     @GetMapping(path="/all")
     public ResponseEntity<Iterable<Student>> getAllStudent(){
+        System.out.println(studentRepository);
         Iterable<Student> students = studentRepository.findAll();
         System.out.println(students); // Display the result of selects
         return new ResponseEntity<>(students, HttpStatus.OK);
